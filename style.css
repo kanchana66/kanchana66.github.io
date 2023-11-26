@@ -8,13 +8,29 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    margin: auto;
-    width: 100%;
-    position: relative;
-    background-color: #fcfcfc;
-    font-family:'Roboto', sans-serif;
+/* Cursor Animation */
+body {
+    cursor: none;
 }
+
+/* Add these styles for the cursor animation */
+.navbar, .filter-btn, .btn {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #949594;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
 
 ::selection{
     background: #9f526430;
@@ -33,12 +49,24 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fcfcfc;
+    /* background: #fcfcfc; */
+    cursor: none;
 }
+
+/* Add this to your existing CSS */
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 .logo{
     font-size: 1.5rem;
     font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+.logo:hover {
+    color: #949594;
 }
 
 .nav-links-container{
@@ -389,6 +417,8 @@ body{
     transition: .5s;
     border-radius: 5px;
     position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-thumbnail{
