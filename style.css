@@ -65,9 +65,9 @@ body {
     font-weight: 300;
     transition: color 0.3s ease-in-out;
 }
-.logo:hover {
+/* .logo:hover {
     color: #949594;
-}
+} */
 
 .nav-links-container{
     display: flex;
@@ -104,6 +104,11 @@ body {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 40px;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-heading:hover {
+    color: #949594;
 }
 
 .header-heading .brand-name{
@@ -116,6 +121,11 @@ body {
 
 .brand-name span{
     color: #949594;
+    transition: color 0.3s ease-in-out;
+}
+
+.brand-name span:hover {
+    color: #121212;
 }
 
 .btn{
@@ -160,6 +170,7 @@ body {
     margin-left: 20px;
     position: relative;
     user-select: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .circle::before{
@@ -172,6 +183,23 @@ body {
     border: 10px solid #fff;
     border-radius: 50%;
 }
+
+/* Define keyframes for color changes */
+@keyframes colorChange {
+    0% {
+        background: #e5e4e2; /* Initial color */
+    }
+    100% {
+        background: #e5e4e2; /* Final color (same as initial for a single color) */
+    }
+}
+
+/* Apply the keyframes on hover */
+.circle:hover {
+    animation: colorChange 1s linear infinite; /* Change the duration and timing function as needed */
+    transition: background 0.3s ease-in-out; /* Add a smooth transition */
+}
+
 
 /*about section*/
 
@@ -207,6 +235,12 @@ body {
     object-fit: cover;
     margin: 10px auto;
     border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Added transition for zoom effect */
+}
+
+/* Zoom-in effect on hover */
+.about-img:hover {
+    transform: scale(1.2);
 }
 
 .squre{
