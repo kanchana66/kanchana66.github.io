@@ -55,6 +55,14 @@ let projectData = [
         live: '#',
         tags: '#python'
     },
+    {
+        image: 'img/nmap.jpg',
+        name: 'project 8',
+        detail: 'The Nmap GUI is a user-friendly interface that makes it easy to run network scans using the Nmap tool. With just a few clicks, users can specify target hosts, choose scanning options, and initiate scans.',
+        github: 'https://github.com/kanchana66/Nmap-GUI',
+        live: '#',
+        tags: '#python, #nmap'
+    },
     
 ]
 
