@@ -35,4 +35,4 @@ Feel free to explore the website to learn more about my educational and professi
 ## Contact
 
 - smtkanchana66@gmail.com
-- kanchana66.github.io
+- <a href="https://smtkanchana66.github.io"> www.smtkanchana66.com </a>
